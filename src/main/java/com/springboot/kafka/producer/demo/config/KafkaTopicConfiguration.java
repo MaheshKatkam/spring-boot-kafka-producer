@@ -1,4 +1,4 @@
-package com.springboot.kafka.producer.kafka.producer.demo.config;
+package com.springboot.kafka.producer.demo.config;
 
 
 import org.apache.kafka.clients.admin.NewTopic;

@@ -1,4 +1,4 @@
-package com.springboot.kafka.producer.kafka.producer.demo.dto;
+package com.springboot.kafka.producer.demo.dto;
 
 import lombok.Data;
 

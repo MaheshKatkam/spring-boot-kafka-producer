@@ -1,6 +1,6 @@
-package com.springboot.kafka.producer.kafka.producer.demo.service;
+package com.springboot.kafka.producer.demo.service;
 
-import com.springboot.kafka.producer.kafka.producer.demo.dto.Employee;
+import com.springboot.kafka.producer.demo.dto.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -19,7 +19,7 @@ public class KafkaPublishService {
     KafkaTemplate<String,Object> kafkaTemplate;
 
     public void publishMessage(String message){
-        CompletableFuture<SendResult<String, Object>> future =  kafkaTemplate.send("kafka-message-topic-java-partition-3",message);
+        CompletableFuture<SendResult<String, Object>> future =  kafkaTemplate.send("kafka-message-topic-partition-3",message);
         future.whenComplete((result,ex)->{
             if (ex == null) {
                 logger.info("Sent message=[" + message +

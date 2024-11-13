@@ -1,4 +1,4 @@
-package com.springboot.kafka.producer.kafka.producer.demo;
+package com.springboot.kafka.producer.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
