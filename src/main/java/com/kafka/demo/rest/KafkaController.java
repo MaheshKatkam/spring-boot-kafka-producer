@@ -1,7 +1,7 @@
-package com.springboot.kafka.producer.demo.rest;
+package com.kafka.demo.rest;
 
-import com.springboot.kafka.producer.demo.dto.Employee;
-import com.springboot.kafka.producer.demo.service.KafkaPublishService;
+import com.kafka.demo.dto.Employee;
+import com.kafka.demo.service.KafkaPublishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -34,7 +34,7 @@ public class KafkaController {
     public ResponseEntity<?> eventPublisher(@RequestBody Employee employee){
         try{
 
-            for(int i = 1 ; i <=10000 ; i ++){
+            for(int i = 1 ; i <=5 ; i ++){
                 employee.setName("Mahesh"+"-"+ i);
                 publishService.publishEvent(employee);
             }

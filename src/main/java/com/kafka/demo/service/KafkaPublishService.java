@@ -1,6 +1,6 @@
-package com.springboot.kafka.producer.demo.service;
+package com.kafka.demo.service;
 
-import com.springboot.kafka.producer.demo.dto.Employee;
+import com.kafka.demo.dto.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
