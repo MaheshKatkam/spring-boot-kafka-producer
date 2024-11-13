@@ -10,7 +10,7 @@
 
     Create topic
 
-    sh bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic NewTopic --partitions 3 --replication-factor 1
+    sh bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic kafka-message-topic-partition-3 --partitions 3 --replication-factor 1
 
     list out all topic names
 
